@@ -1,6 +1,42 @@
 #title {
-  background-color: rgb(78, 60, 94);
-  color: rgb(177, 190, 216);
-  text-align: center;
-  padding: 10px;
+	background-color: rgb(75, 72, 72);
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+#searchBox {
+	background-color: cornflowerblue;
+	color: white;
+	height: auto;
+	float: left;
+}
+
+#button {
+	background-color: rgb(162, 166, 173);
+	color: rgb(12, 11, 11);
+}
+
+#button:hover {
+	background-color: rgb(52, 76, 121);
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	padding: 10px;
+}
+
+.city {
+	width: 350px;
+	margin: 5px;
+}
+
+.city:hover {
+	background-color: rgb(192, 185, 185);
+}
+
+#jbtrn {
+	float: left;
 }
