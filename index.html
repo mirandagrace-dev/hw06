@@ -15,14 +15,15 @@
 	<body>
 		<h1 class="col-md-12" id="title">Weather Dashboard</h1>
 
-		<div class="col-md-3" id="searchBox">
-			<div class="input-group mb-3">
+		<div class="col-md-3 vh-100" id="searchBox">
+			<div class="input-group mb-3 search">
 				<input
 					type="text"
 					class="form-control"
 					placeholder="City Name"
 					aria-label="City Name"
-					aria-describedby="button-addon2"
+                    aria-describedby="button-addon2"
+                    id ="cityToSearch"
 				/>
 				<button class="btn btn-outline-secondary" type="button" id="button">
 					GO
@@ -58,17 +59,74 @@
 				</button>
 			</ul>
 		</div>
-		<div class="col-md-9" id="jbtrn">
-			<div class="jumbotron jumbotron-fluid">
-				<div class="container">
-					<h1 class="display-4">Fluid jumbotron</h1>
-					<p class="lead">
-						This is a modified jumbotron that occupies the entire horizontal
-						space of its parent.
-					</p>
+
+		<div class="col-md-9" id="results">
+			<row>
+				<div class="jumbotron jumbotron-fluid">
+					<div class="container">
+						<h1 class="display-4" id="cityHeader"></h1>
+						<p class="lead">
+							This is a modified jumbotron that occupies the entire horizontal
+							space of its parent.
+						</p>
+					</div>
 				</div>
-			</div>
+			</row>
+			<row>
+				<div class="card" style="width: 11rem">
+					<div class="card-body">
+						<h5 class="card-title" id="date">Date</h5>
+						<h6 class="card-subtitle mb-2 text-muted" id="icon">icon</h6>
+						<p class="card-text">
+                            <p id="temp">temp</p>
+                            <p id="humidity">humidity</p>
+						</p>
+					</div>
+                </div>
+                <div class="card" style="width: 11rem">
+					<div class="card-body">
+						<h5 class="card-title" id="date">Date</h5>
+						<h6 class="card-subtitle mb-2 text-muted" id="icon">icon</h6>
+						<p class="card-text">
+                            <p id="temp">temp</p>
+                            <p id="humidity">humidity</p>
+						</p>
+					</div>
+                </div>
+                <div class="card" style="width: 11rem">
+					<div class="card-body">
+						<h5 class="card-title" id="date">Date</h5>
+						<h6 class="card-subtitle mb-2 text-muted" id="icon">icon</h6>
+						<p class="card-text">
+                            <p id="temp">temp</p>
+                            <p id="humidity">humidity</p>
+						</p>
+					</div>
+                </div>
+                <div class="card" style="width: 11rem">
+					<div class="card-body">
+						<h5 class="card-title" id="date">Date</h5>
+						<h6 class="card-subtitle mb-2 text-muted" id="icon">icon</h6>
+						<p class="card-text">
+                            <p id="temp">temp</p>
+                            <p id="humidity">humidity</p>
+						</p>
+					</div>
+                </div>
+                <div class="card" style="width: 11rem">
+					<div class="card-body">
+						<h5 class="card-title" id="date">Date</h5>
+						<h6 class="card-subtitle mb-2 text-muted" id="icon">icon</h6>
+						<p class="card-text">
+                            <p id="temp">temp</p>
+                            <p id="humidity">humidity</p>
+						</p>
+					</div>
+				</div>
+				
+			</row>
 		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="assets/script.js"></script>
 	</body>

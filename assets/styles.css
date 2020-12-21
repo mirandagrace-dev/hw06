@@ -9,7 +9,7 @@
 #searchBox {
 	background-color: cornflowerblue;
 	color: white;
-	height: auto;
+	height: 500px;
 	float: left;
 }
 
@@ -29,14 +29,33 @@ ul {
 }
 
 .city {
-	width: 350px;
+	width: 96%;
 	margin: 5px;
+	text-align: left;
 }
 
 .city:hover {
 	background-color: rgb(192, 185, 185);
 }
 
-#jbtrn {
+#results {
 	float: left;
+}
+
+.jumbotron {
+	border: solid grey 1px;
+	margin: 15px;
+}
+
+.card {
+	margin: 15px;
+	float: left;
+	border-radius: 3%;
+	background-color: cornflowerblue;
+	color: white;
+}
+
+.search {
+	width: 88%;
+	margin: 15px;
 }
