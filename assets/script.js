@@ -1,9 +1,3 @@
-// // get query url
-// var queryURL =
-// 	"api.openweathermap.org/data/2.5/weather?q=" +
-// 	cityName +
-// 	"&appid=e7a32108462aab31f968bcdc784f383c";
-
 // dom variables
 var dateEl = $("#date");
 var iconEl = $("#icon");
@@ -13,18 +7,22 @@ var cityEl = $("#cityHeader");
 var citySearch = $("#cityToSearch");
 
 $(document).ready(function () {
-	$(cityEl).text("Atlanta");
-	console.log(citySearch);
-
-	$("#button").click(function (e) {
-		e.preventDefault();
-		$(cityEl).text(citySearch);
-		console.log("help");
-		console.log(cityEl);
-    });
-    
-    $.ajax
-
+	$("button").on("click", function () {
+		console.log("clicked!");
+		var cityName = "Miami";
+		var queryURL =
+			"https://api.openweathermap.org/data/2.5/weather?q=" +
+			cityName +
+			"&appid=" +
+			"2c429fd1ad534c0117878a68f090d215";
+		$.ajax({
+			url: queryURL,
+			method: "GET",
+		}).then(function (response) {
+			console.log("Hello World!");
+			console.log(response);
+		});
+	});
 });
 
 //js variables
